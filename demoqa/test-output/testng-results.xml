@@ -2,32 +2,63 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-20T06:47:11Z" name="DemoQAAutomation" finished-at="2021-06-20T06:47:12Z" duration-ms="1230">
+  <suite started-at="2021-06-20T06:51:24Z" name="DemoQAAutomation" finished-at="2021-06-20T06:51:32Z" duration-ms="7533">
     <groups>
     </groups>
-    <test started-at="2021-06-20T06:47:11Z" name="InitialSetup" finished-at="2021-06-20T06:47:11Z" duration-ms="10">
+    <test started-at="2021-06-20T06:51:24Z" name="InitialSetup" finished-at="2021-06-20T06:51:24Z" duration-ms="9">
     </test> <!-- InitialSetup -->
-    <test started-at="2021-06-20T06:47:11Z" name="Tests" finished-at="2021-06-20T06:47:12Z" duration-ms="1159">
+    <test started-at="2021-06-20T06:51:24Z" name="Tests" finished-at="2021-06-20T06:51:32Z" duration-ms="7433">
       <class name="setup.SeleniumInit">
-        <test-method is-config="true" signature="setup()[pri:0, instance:setup.SeleniumInit@71c8becc]" started-at="2021-06-20T06:46:42Z" name="setup" finished-at="2021-06-20T06:47:11Z" duration-ms="29236" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:setup.SeleniumInit@71c8becc]" started-at="2021-06-20T06:51:15Z" name="setup" finished-at="2021-06-20T06:51:24Z" duration-ms="8897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:setup.SeleniumInit@71c8becc]" started-at="2021-06-20T06:47:12Z" name="afterSuite" finished-at="2021-06-20T06:47:14Z" duration-ms="2010" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:setup.SeleniumInit@71c8becc]" started-at="2021-06-20T06:51:32Z" name="afterSuite" finished-at="2021-06-20T06:51:34Z" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- setup.SeleniumInit -->
       <class name="runnerClasses.TextBoxRunner">
-        <test-method signature="test1()[pri:0, instance:runnerClasses.TextBoxRunner@636be97c]" started-at="2021-06-20T06:47:11Z" name="test1" finished-at="2021-06-20T06:47:11Z" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="test1()[pri:0, instance:runnerClasses.TextBoxRunner@65d6b83b]" started-at="2021-06-20T06:51:24Z" name="test1" finished-at="2021-06-20T06:51:31Z" duration-ms="6299" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+              <![CDATA[element click intercepted: Element <button id="submit" type="button" class="btn btn-primary">...</button> is not clickable at point (1078, 639). Other element would receive the click: <iframe frameborder="0" src="https://e7cb88f922469607d4dd10e75e7a7ef7.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="conversion-measurement" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=91.0.4472.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FJ3K051I', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a5a21768ba0a201cfc01aa7ce52d0ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at pageObjects.TextBoxPage.navigate(TextBoxPage.java:15)
-at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:18)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="submit" type="button" class="btn btn-primary">...</button> is not clickable at point (1078, 639). Other element would receive the click: <iframe frameborder="0" src="https://e7cb88f922469607d4dd10e75e7a7ef7.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="conversion-measurement" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=91.0.4472.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FJ3K051I', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a5a21768ba0a201cfc01aa7ce52d0ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at pageObjects.TextBoxPage.enterDataAndSubmit(TextBoxPage.java:38)
+at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,7 +86,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

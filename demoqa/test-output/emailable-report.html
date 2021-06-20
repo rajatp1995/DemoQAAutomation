@@ -9,16 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">DemoQAAutomation</th></tr>
-<tr><td><a href="#t0">InitialSetup</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,159</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">1,169</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">InitialSetup</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,433</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">7,442</th><th colspan="2"></th></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DemoQAAutomation</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runnerClasses.TextBoxRunner</td><td><a href="#m0">test1</a></td><td rowspan="1">1624171631444</td><td rowspan="1">6</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runnerClasses.TextBoxRunner</td><td><a href="#m0">test1</a></td><td rowspan="1">1624171884951</td><td rowspan="1">6299</td></tr></tbody>
 </table>
-<h2>InitialSetup</h2><h2>Tests</h2><h3 id="m0">runnerClasses.TextBoxRunner#test1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at pageObjects.TextBoxPage.navigate(TextBoxPage.java:15)
-	at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:18)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>InitialSetup</h2><h2>Tests</h2><h3 id="m0">runnerClasses.TextBoxRunner#test1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 639). Other element would receive the click: &lt;iframe frameborder=&quot;0&quot; src=&quot;https://e7cb88f922469607d4dd10e75e7a7ef7.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html&quot; id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; title=&quot;3rd party ad content&quot; name=&quot;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;728&quot; height=&quot;90&quot; data-is-safeframe=&quot;true&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; allow=&quot;conversion-measurement&quot; data-google-container-id=&quot;1&quot; style=&quot;border: 0px; vertical-align: bottom;&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-FJ3K051I&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a5a21768ba0a201cfc01aa7ce52d0ae
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageObjects.TextBoxPage.enterDataAndSubmit(TextBoxPage.java:38)
+	at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:20)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

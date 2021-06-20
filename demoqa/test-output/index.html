@@ -128,10 +128,26 @@
                   <a name="test1">
                   </a> <!-- test1 -->
                   <span class="method-name">test1</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at pageObjects.TextBoxPage.navigate(TextBoxPage.java:15)
-	at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:18)
-... Removed 25 stack frames
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 639). Other element would receive the click: &lt;iframe frameborder=&quot;0&quot; src=&quot;https://e7cb88f922469607d4dd10e75e7a7ef7.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html&quot; id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; title=&quot;3rd party ad content&quot; name=&quot;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;728&quot; height=&quot;90&quot; data-is-safeframe=&quot;true&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; allow=&quot;conversion-measurement&quot; data-google-container-id=&quot;1&quot; style=&quot;border: 0px; vertical-align: bottom;&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-FJ3K051I&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a5a21768ba0a201cfc01aa7ce52d0ae
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageObjects.TextBoxPage.enterDataAndSubmit(TextBoxPage.java:38)
+	at runnerClasses.TextBoxRunner.test1(TextBoxRunner.java:20)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -204,12 +220,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'runnerClasses.TextBoxRunner')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 6299);
 window.suiteTableData['DemoQAAutomation']= { tableData: data, tableDiv: 'times-div-DemoQAAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-DemoQAAutomation">
               </div> <!-- times-div-DemoQAAutomation -->
             </div> <!-- times-div -->
@@ -247,14 +263,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test1</span>
-                <span class="method-start">29321 ms</span>
+                <span class="method-start">9022 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">setup.SeleniumInit</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">30480 ms</span>
+                <span class="method-start">16451 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
