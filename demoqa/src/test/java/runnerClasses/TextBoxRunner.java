@@ -14,6 +14,7 @@ public class TextBoxRunner {
 	
 	@Test
 	public void test1() {
+		textBoxPage.navigate(url);
 		textBoxPage.enterDataAndSubmit("Rajat", "rajat@rajat.com", "cA", "pA");
 	}
 
