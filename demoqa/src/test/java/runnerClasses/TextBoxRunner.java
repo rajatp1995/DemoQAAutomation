@@ -17,17 +17,16 @@ public class TextBoxRunner {
 	public void classSetup() {
 		driver = SeleniumInit.getDriver();
 		textBoxPage = PageFactory.initElements(driver, TextBoxPage.class);
+		textBoxPage.navigate(url);
 	}
 	
 	@Test
 	public void test1() {
-		textBoxPage.navigate(url);
 		textBoxPage.enterDataAndSubmit("Rajat", "rajat@rajat.com", "cA", "pA");
 	}
 	
 	@Test
 	public void test2() {
-		textBoxPage.navigate(url);
 		textBoxPage.enterDataAndSubmit("Fish", "fish@fish.com", "cA", "pA");
 	}
 
