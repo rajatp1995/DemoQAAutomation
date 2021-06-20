@@ -27,7 +27,7 @@ public class TextBoxPage {
 	@FindBy(xpath="//textarea[@id='permanentAddress']")
 	WebElement permanentAddress;
 	
-	@FindBy(xpath="//button[@id='submit']")
+	@FindBy(xpath="//*[@id='submit']")
 	WebElement submitButton;
 	
 	public void enterDataAndSubmit(String uName, String uEmail, String cAddress, String pAddress) {
@@ -35,6 +35,6 @@ public class TextBoxPage {
 		userEmail.sendKeys(uEmail);
 		currentAddress.sendKeys(cAddress);
 		permanentAddress.sendKeys(pAddress);
-		submitButton.submit();
+		submitButton.click();
 	}
 }
