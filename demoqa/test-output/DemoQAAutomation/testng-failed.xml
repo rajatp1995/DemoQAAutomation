@@ -9,6 +9,7 @@
       <class name="runnerClasses.TextBoxRunner">
         <methods>
           <include name="test1"/>
+          <include name="classSetup"/>
         </methods>
       </class> <!-- runnerClasses.TextBoxRunner -->
     </classes>

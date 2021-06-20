@@ -35,6 +35,6 @@ public class TextBoxPage {
 		userEmail.sendKeys(uEmail);
 		currentAddress.sendKeys(cAddress);
 		permanentAddress.sendKeys(pAddress);
-		submitButton.click();
+		submitButton.submit();
 	}
 }
