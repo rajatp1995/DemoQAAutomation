@@ -24,6 +24,6 @@ public class SeleniumInit {
     public void afterSuite() throws InterruptedException {
     	System.out.println("Results written into TestResult.xlsx file.");
     	Thread.sleep(2000);
-        driver.quit();
+        //driver.quit();
     }
 }
