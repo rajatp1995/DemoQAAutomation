@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoQAAutomation]">
+  <listeners>
+    <listener class-name="setup.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="runnerClasses.TextBoxRunner">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- runnerClasses.TextBoxRunner -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [DemoQAAutomation] -->
