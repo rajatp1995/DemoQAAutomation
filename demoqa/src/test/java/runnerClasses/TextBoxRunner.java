@@ -14,8 +14,8 @@ public class TextBoxRunner {
 	
 	@Test
 	public void test1() {
-		textBoxPage = PageFactory.initElements(driver, TextBoxPage.class);
 		driver = SeleniumInit.getDriver();
+		textBoxPage = PageFactory.initElements(driver, TextBoxPage.class);
 		textBoxPage.navigate(url);
 		textBoxPage.enterDataAndSubmit("Rajat", "rajat@rajat.com", "cA", "pA");
 	}

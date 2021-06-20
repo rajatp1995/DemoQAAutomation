@@ -12,7 +12,7 @@ public class TextBoxPage {
 	}
 	
 	public void navigate(String url) {
-		driver.get("https://demoqa.com/text-box");
+		driver.get(url);
 	}
 	
 	@FindBy(xpath="//input[@id='userName']")
