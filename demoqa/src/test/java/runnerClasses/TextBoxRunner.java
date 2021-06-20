@@ -23,6 +23,6 @@ public class TextBoxRunner {
 	@Test
 	public void test1() throws InterruptedException {
 		textBoxPage.enterDataAndSubmit("Rajat", "rajat@rajat.com", "cA", "pA");
-		textBoxPage.verifyData("Dish", "rajat@rajat.com", "cA", "pA");
+		textBoxPage.verifyData("Rajat", "rajat@rajat.com", "cA", "pA");
 	}
 }
