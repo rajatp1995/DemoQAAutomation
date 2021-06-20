@@ -25,10 +25,4 @@ public class TextBoxRunner {
 		textBoxPage.enterDataAndSubmit("Rajat", "rajat@rajat.com", "cA", "pA");
 		textBoxPage.verifyData("Dish", "rajat@rajat.com", "cA", "pA");
 	}
-	
-//	@Test
-//	public void test2() {
-//		textBoxPage.enterDataAndSubmit("Fish", "fish@fish.com", "cA", "pA");
-//	}
-
 }
